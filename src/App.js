@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import Header from './components/Header/Header';
+import Products from './components/Products/Products';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
 
             <Route path="/" element={<Header />} />
+            <Route path="/products" element={<Products />} />
             <Route path="*" element={<NotFoundPage />} />
 
           </Routes>

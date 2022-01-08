@@ -1,7 +1,8 @@
 import React, { useEffect, useCallback, useMemo } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { setProducts } from "../../../redux/actions/ProductActions";
+import { setProducts } from "../../redux/actions/ProductActions";
+import Product from "../Product/Product";
 
 const Products = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -21,8 +22,8 @@ const Products = () => {
 
   console.log("Products :", products);
   return (
-    <div className="ui grid container">
-        <h1>This is products</h1>
+    <div class="row row-cols-1 row-cols-md-5 g-4 m-5">
+        <Product></Product>
     </div>
   );
 };
