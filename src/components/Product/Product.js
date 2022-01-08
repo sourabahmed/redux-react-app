@@ -13,7 +13,7 @@ const Product = () => {
                     <div class="card">
                         <img src={image} class="card-img-top image text-center p-3" alt="..." />
                             <div class="card-body">
-                                <h6 class="card-title">{title.slice(0, 100)}</h6>
+                                <h6 class="card-title">{title.slice(0, 30)}</h6>
                                 <p class="card-text">{price}</p>
                             </div>
                     </div>
