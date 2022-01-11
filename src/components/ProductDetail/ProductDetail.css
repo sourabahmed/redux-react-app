@@ -1,0 +1,24 @@
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 100px;
+}
+.detail-image{
+    text-align: center;
+    border-right: 1px solid black;
+}
+.detail-image img {
+    height: 400px;
+    width: auto;
+}
+
+@media only screen and (max-width: 668px) {
+    .detail{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .detail-image{
+        border-right: 0px ;
+    }
+}

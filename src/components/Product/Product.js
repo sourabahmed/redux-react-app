@@ -8,7 +8,7 @@ const Product = () => {
     const renderList = products.map((product) => {
         const { id, title, image, price, category } = product;
         return (
-            <Link to={`/product/${id}`}>
+            <Link to={`/products/${id}`}>
                 <div class="col">
                     <div class="card">
                         <img src={image} class="card-img-top image text-center p-3" alt="..." />

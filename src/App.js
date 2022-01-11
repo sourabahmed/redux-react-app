@@ -15,10 +15,9 @@ function App() {
     <div className="App">
      <BrowserRouter>
           <Routes>
-
-            <Route path="/" element={<Header />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="product/:productId" element={<ProductDetails />} />
+            <Route path="/" element={<Products />} />
+            <Route path="home" element={<Products />} />
+            <Route path="products/:productId" element={<ProductDetails />} />
             <Route path="*" element={<NotFoundPage />} />
 
           </Routes>
